@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="bn">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>অনলাইন সনদ যাচাই</title>
-  
-  <!-- Open Graph Meta Tags for Link Sharing -->
-  <meta property="og:title" content="অনলাইন সনদ যাচাই">
-  <meta property="og:description" content="ইউনিয়ন ও পৌরসভার অনলাইন সনদ যাচাইকরণ পোর্টাল">
-  <meta property="og:type" content="website">
-
-  <style>
+  <head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>অনলাইন সনদ যাচাই</title>
+        <!-- Open Graph Meta Tags for Link Sharing -->
+        <meta property="og:title" content="অনলাইন সনদ যাচাই">
+          <meta property="og:description" content="ইউনিয়ন ও পৌরসভার অনলাইন সনদ যাচাইকরণ পোর্টাল">
+            <meta property="og:type" content="website">
+              <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
     body { background-color: #f4f4f4; display: flex; justify-content: center; }
     .container { width: 100%; max-width: 420px; background: #ffffff; border: 1px solid #ccc; position: relative; min-height: 100vh; }
@@ -58,250 +56,394 @@
     .footer-msg { font-size: 11px; color: #333; margin-bottom: 8px; }
     .footer-links-grid { display: flex; justify-content: space-between; border-top: 1px solid #ddd; padding-top: 6px; font-size: 11px; color: #222; font-weight: bold; }
   </style>
-</head>
-<body>
-  <div class="container">
-    <div class="top-banner">
-      <div class="running-line">অনলাইন সনদ যাচাইকরণ পোর্টালে আপনাকে স্বাগতম • নির্ভুল ও দ্রুত সেবা গ্রহণ করুন •</div>
-    </div>
-    <div class="logo-area">
-      <img src="https://prottoyon.gov.bd/images/logo.png" alt="প্রত্যয়ন লোগো" class="logo-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/8/84/Government_Seal_of_Bangladesh.svg'">
-    </div>
-    <div class="nav-section">
-      <div class="nav-row">
-        <select class="select-box">
-          <option value=""> শেরপুর জেলা / উপজেলা ▾</option>
-          <option value="শেরপুর সদর">শেরপুর সদর</option>
-          <option value="নকলা">নকলা</option>
-          <option value="নালীতাবাড়ী">নালীতাবাড়ী</option>
-          <option value="শ্রীবরদী">শ্রীবরদী</option>
-          <option value="ঝিনাইগাতী">ঝিনাইগাতী</option>
-        </select>
-        <select class="select-box">
-          <option value=""> শেরপুরের সকল পৌরসভা ▾</option>
-          <option value="শেরপুর পৌরসভা">শেরপুর পৌরসভা</option>
-          <option value="নকলা পৌরসভা">নকলা পৌরসভা</option>
-          <option value="নালীতাবাড়ী পৌরসভা">নালীতাবাড়ী পৌরসভা</option>
-          <option value="শ্রীবরদী পৌরসভা">শ্রীবরদী পৌরসভা</option>
-        </select>
-      </div>
-      <div class="nav-row">
-        <select class="select-box">
-          <option value=""> শেরপুরের সকল ইউনিয়ন (৫২টি) ▾</option>
-          <optgroup label="-- শেরপুর সদর (১৪টি) --">
-            <option value="কামারেরচর">কামারেরচর</option>
-            <option value="চরশেরপুর">চরশেরপুর</option>
-            <option value="বাজিতখিলা">বাজিতখিলা</option>
-            <option value="গাজির খামার">গাজির খামার</option>
-            <option value="ধলা">ধলা</option>
-            <option value="পাকুড়িয়া">পাকুড়িয়া</option>
-            <option value="ভাতশালা">ভাতশালা</option>
-            <option value="লছমনপুর">লছমনপুর</option>
-            <option value="চর মোচারিয়া">চর মোচারিয়া</option>
-            <option value="চর পক্ষীমারী">চর পক্ষীমারী</option>
-            <option value="বলাইরচর">বলাইরচর</option>
-            <option value="কামারিয়া">কামারিয়া</option>
-            <option value="রৌহা">রৌহা</option>
-            <option value="বেতমারী ঘুঘুরাকান্দি">বেতমারী ঘুঘুরাকান্দি</option>
-          </optgroup>
-          <optgroup label="-- নকলা (৯টি) --">
-            <option value="গণপদ্দী">গণপদ্দী</option>
-            <option value="নকলা">নকলা</option>
-            <option value="উরফা">উরফা</option>
-            <option value="গৌড়দ্বার">গৌড়দ্বার</option>
-            <option value="বানেশ্বর্দী">বানেশ্বর্দী</option>
-            <option value="পাঠাকাটা">পাঠাকাটা</option>
-            <option value="টালকী">টালকী</option>
-            <option value="চর অষ্টধর">চর অষ্টধর</option>
-            <option value="চন্দ্রকোনা">চন্দ্রকোনা</option>
-          </optgroup>
-          <optgroup label="-- নালিতাবাড়ী (১২টি) --">
-            <option value="পোড়াগাঁও">পোড়াগাঁও</option>
-            <option value="নন্নী">নন্নী</option>
-            <option value="রাজনগর">রাজনগর</option>
-            <option value="নয়াবিল">নয়াবিল</option>
-            <option value="রামচন্দ্রকুড়া">রামচন্দ্রকুড়া</option>
-            <option value="কাকরকান্দি">কাকরকান্দি</option>
-            <option value="নালিতাবাড়ী">নালিতাবাড়ী</option>
-            <option value="রূপনারায়ণকুড়া">রূপনারায়ণকুড়া</option>
-            <option value="মরিচপুরান">মরিচপুরান</option>
-            <option value="যোগানিয়া">যোগানিয়া</option>
-            <option value="বাঘবেড়">বাঘবেড়</option>
-            <option value="কলসপাড়">কলসপাড়</option>
-          </optgroup>
-          <optgroup label="-- শ্রীবরদী (১০টি) --">
-            <option value="সিংগাবরুনা">সিংগাবরুনা</option>
-            <option value="রানীশিমুল">রানীশিমুল</option>
-            <option value="কাকিলাকুড়া">কাকিলাকুড়া</option>
-            <option value="তাতীহাটি">তাতীহাটি</option>
-            <option value="গোঁসাইপুর">গোঁসাইপুর</option>
-            <option value="শ্রীবরদী">শ্রীবরদী</option>
-            <option value="ভেলুয়া">ভেলুয়া</option>
-            <option value="খড়িয়া কাজিরচর">খড়িয়া কাজিরচর</option>
-            <option value="কুড়িকাহনিয়া">কুড়িকাহনিয়া</option>
-            <option value="গড়জরিপা">গড়জরিপা</option>
-          </optgroup>
-          <optgroup label="-- ঝিনাইগাতী (৭টি) --">
-            <option value="কাংশা">কাংশা</option>
-            <option value="ধানশাইল">ধানশাইল</option>
-            <option value="নলকুড়া">নলকুড়া</option>
-            <option value="গৌরীপুর">গৌরীপুর</option>
-            <option value="ঝিনাইগাতী">ঝিনাইগাতী</option>
-            <option value="হাতীবান্ধা">হাতীবান্ধা</option>
-            <option value="মালিঝিকান্দা">মালিঝিকান্দা</option>
-          </optgroup>
-        </select>
-        <div class="menu-btn" onclick="alert('মেনু ড্রয়ার অপশন')">
-          <span>মেনু নির্বাচন করুন</span>
-          <span>☰</span>
-        </div>
-      </div>
-      <div class="search-container">
-        <input type="text" id="siteSearchInput" class="search-input" placeholder="ওয়েবসাইটে অনুসন্ধান করুন .......">
-        <button class="search-btn" onclick="alert('অনুসন্ধান করা হচ্ছে...')">🔍 অনুসন্ধান</button>
-      </div>
-    </div>
-    
-    <div class="header-bar">সনদ যাচাই করুন</div>
-    
-    <div class="content-body">
-      <div class="form-label">আবেদন আইডি নং / সনদ নং <span style="color:red">*</span></div>
-      <div class="input-group">
-        <input type="text" id="certInput" class="cert-input" placeholder="সনদ নম্বর টাইপ করুন...">
-        <button class="verify-btn" onclick="searchCertificate()">✓ যাচাই কৃত</button>
-      </div>
-      
-      <div id="errorBox" class="error-msg">❌ সঠিক আবেদন/সনদ নং প্রদান করুন! কোনো তথ্য পাওয়া যায়নি।</div>
-      
-      <div id="resultBox">
-        <div class="status-verified">যাচাই করন সম্পুর্ন হয়েছে</div>
-        <div class="details-text">
-          আবেদন নম্বর/সনদ নং <strong id="outCertNo">---</strong> এর প্রেক্ষিতে<br>
-          মৃত <strong id="outDeadName">---</strong> এর উত্তরাধিকার সনদটি <strong id="outOffice">---</strong> হতে <strong id="outDate">---</strong> তারিখে <strong id="outOfficer">---</strong> কর্তৃক প্রদান করা হয়েছে।
-        </div>
-        <div class="list-heading">ওয়ারিশগন এর তালিকা নিম্নরুপঃ</div>
-        <table class="result-table">
-          <thead>
-            <tr>
-              <th style="width: 60%;">নাম</th>
-              <th style="width: 40%;">সম্পর্ক</th>
-            </tr>
-          </thead>
-          <tbody id="warishTableBody">
-          </tbody>
-        </table>
-      </div>
-    </div>
-    
-    <div class="footer-banner">জরুরী প্রয়োজনে</div>
-    <div class="footer-body">
-      <div class="footer-msg">কোনো জিজ্ঞাসা থাকলে আমাদের সাথে যোগাযোগ করতে পারেন।</div>
-      <div class="footer-links-grid">
-        <div>যোগাযোগ<br>জিজ্ঞাসা</div>
-        <div>গোপনীয়তা<br>সতর্কতা</div>
-        <div>প্রয়োজনীয়<br>নীতিমালা</div>
-      </div>
-    </div>
-  </div>
+            </head>
+            <body>
+              <div class="container">
+                <div class="top-banner">
+                  <div class="running-line">অনলাইন সনদ যাচাইকরণ পোর্টালে আপনাকে স্বাগতম • নির্ভুল ও দ্রুত সেবা গ্রহণ করুন •</div>
+                </div>
+                <div class="logo-area">
+                  <img src="https://prottoyon.gov.bd/images/logo.png" alt="প্রত্যয়ন লোগো" class="logo-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/8/84/Government_Seal_of_Bangladesh.svg'">
+                  </div>
+                  <div class="nav-section">
+                    <div class="nav-row">
+                      <select class="select-box">
+                        <option value=""> শেরপুর জেলা / উপজেলা ▾</option>
+                        <option value="শেরপুর সদর">শেরপুর সদর</option>
+                        <option value="নকলা">নকলা</option>
+                        <option value="নালীতাবাড়ী">নালীতাবাড়ী</option>
+                        <option value="শ্রীবরদী">শ্রীবরদী</option>
+                        <option value="ঝিনাইগাতী">ঝিনাইগাতী</option>
+                      </select>
+                      <select class="select-box">
+                        <option value=""> শেরপুরের সকল পৌরসভা ▾</option>
+                        <option value="শেরপুর পৌরসভা">শেরপুর পৌরসভা</option>
+                        <option value="নকলা পৌরসভা">নকলা পৌরসভা</option>
+                        <option value="নালীতাবাড়ী পৌরসভা">নালীতাবাড়ী পৌরসভা</option>
+                        <option value="শ্রীবরদী পৌরসভা">শ্রীবরদী পৌরসভা</option>
+                      </select>
+                    </div>
+                    <div class="nav-row">
+                      <select class="select-box">
+                        <option value=""> শেরপুরের সকল ইউনিয়ন (৫২টি) ▾</option>
+                        <optgroup label="-- শেরপুর সদর (১৪টি) --">
+                          <option value="কামারেরচর">কামারেরচর</option>
+                          <option value="চরশেরপুর">চরশেরপুর</option>
+                          <option value="বাজিতখিলা">বাজিতখিলা</option>
+                          <option value="গাজির খামার">গাজির খামার</option>
+                          <option value="ধলা">ধলা</option>
+                          <option value="পাকুড়িয়া">পাকুড়িয়া</option>
+                          <option value="ভাতশালা">ভাতশালা</option>
+                          <option value="লছমনপুর">লছমনপুর</option>
+                          <option value="চর মোচারিয়া">চর মোচারিয়া</option>
+                          <option value="চর পক্ষীমারী">চর পক্ষীমারী</option>
+                          <option value="বলাইরচর">বলাইরচর</option>
+                          <option value="কামারিয়া">কামারিয়া</option>
+                          <option value="রৌহা">রৌহা</option>
+                          <option value="বেতমারী ঘুঘুরাকান্দি">বেতমারী ঘুঘুরাকান্দি</option>
+                        </optgroup>
+                        <optgroup label="-- নকলা (৯টি) --">
+                          <option value="গণপদ্দী">গণপদ্দী</option>
+                          <option value="নকলা">নকলা</option>
+                          <option value="উরফা">উরফা</option>
+                          <option value="গৌড়দ্বার">গৌড়দ্বার</option>
+                          <option value="বানেশ্বর্দী">বানেশ্বর্দী</option>
+                          <option value="পাঠাকাটা">পাঠাকাটা</option>
+                          <option value="টালকী">টালকী</option>
+                          <option value="চর অষ্টধর">চর অষ্টধর</option>
+                          <option value="চন্দ্রকোনা">চন্দ্রকোনা</option>
+                        </optgroup>
+                        <optgroup label="-- নালিতাবাড়ী (১২টি) --">
+                          <option value="পোড়াগাঁও">পোড়াগাঁও</option>
+                          <option value="নন্নী">নন্নী</option>
+                          <option value="রাজনগর">রাজনগর</option>
+                          <option value="নয়াবিল">নয়াবিল</option>
+                          <option value="রামচন্দ্রকুড়া">রামচন্দ্রকুড়া</option>
+                          <option value="কাকরকান্দি">কাকরকান্দি</option>
+                          <option value="নালিতাবাড়ী">নালিতাবাড়ী</option>
+                          <option value="রূপনারায়ণকুড়া">রূপনারায়ণকুড়া</option>
+                          <option value="মরিচপুরান">মরিচপুরান</option>
+                          <option value="যোগানিয়া">যোগানিয়া</option>
+                          <option value="বাঘবেড়">বাঘবেড়</option>
+                          <option value="কলসপাড়">কলসপাড়</option>
+                        </optgroup>
+                        <optgroup label="-- শ্রীবরদী (১০টি) --">
+                          <option value="সিংগাবরুনা">সিংগাবরুনা</option>
+                          <option value="রানীশিমুল">রানীশিমুল</option>
+                          <option value="কাকিলাকুড়া">কাকিলাকুড়া</option>
+                          <option value="তাতীহাটি">তাতীহাটি</option>
+                          <option value="গোঁসাইপুর">গোঁসাইপুর</option>
+                          <option value="শ্রীবরদী">শ্রীবরদী</option>
+                          <option value="ভেলুয়া">ভেলুয়া</option>
+                          <option value="খড়িয়া কাজিরচর">খড়িয়া কাজিরচর</option>
+                          <option value="কুড়িকাহনিয়া">কুড়িকাহনিয়া</option>
+                          <option value="গড়জরিপা">গড়জরিপা</option>
+                        </optgroup>
+                        <optgroup label="-- ঝিনাইগাতী (৭টি) --">
+                          <option value="কাংশা">কাংশা</option>
+                          <option value="ধানশাইল">ধানশাইল</option>
+                          <option value="নলকুড়া">নলকুড়া</option>
+                          <option value="গৌরীপুর">গৌরীপুর</option>
+                          <option value="ঝিনাইগাতী">ঝিনাইগাতী</option>
+                          <option value="হাতীবান্ধা">হাতীবান্ধা</option>
+                          <option value="মালিঝিকান্দা">মালিঝিকান্দা</option>
+                        </optgroup>
+                      </select>
+                      <div class="menu-btn" onclick="alert('আপনি মেনু খুলছেন')">
+                        <span>মেনু নির্বাচন করুন</span>
+                        <span>☰</span>
+                      </div>
+                    </div>
+                    <div class="search-container">
+                      <input type="text" id="siteSearchInput" class="search-input" placeholder="ওয়েবসাইটে অনুসন্ধান করুন .......">
+                        <button class="search-btn" onclick="alert('আপনার সনদ টি যাচাই করা হয়েছে')">🔍 অনুসন্ধান</button>
+                      </div>
+                    </div>
+                    <div class="header-bar">সনদ যাচাই করুন</div>
+                    <div class="content-body">
+                      <div class="form-label">আবেদন আইডি নং / সনদ নং <span style="color:red">*</span>
+                    </div>
+                    <div class="input-group">
+                      <input type="text" id="certInput" class="cert-input" placeholder="সনদ নম্বর টাইপ করুন...">
+                        <button class="verify-btn" onclick="searchCertificate()">✓ যাচাই কৃত</button>
+                      </div>
+                      <div id="errorBox" class="error-msg">❌ সঠিক আবেদন/সনদ নং প্রদান করুন! কোনো তথ্য পাওয়া যায়নি।</div>
+                      <div id="resultBox">
+                        <div class="status-verified">যাচাই করন সম্পুর্ন হয়েছে</div>
+                        <div class="details-text">
+                          আবেদন নম্বর/সনদ নং <strong id="outCertNo">---</strong> এর প্রেক্ষিতে<br>
+                          মৃত <strong id="outDeadName">---</strong> এর উত্তরাধিকার সনদটি <strong id="outOffice">---</strong> হতে <strong id="outDate">---</strong> তারিখে <strong id="outOfficer">---</strong> কর্তৃক প্রদান করা হয়েছে।
+                        </div>
+                        <div class="list-heading">ওয়ারিশগন এর তালিকা নিম্নরুপঃ</div>
+                        <table class="result-table">
+                          <thead>
+                            <tr>
+                              <th style="width: 60%;">নাম</th>
+                              <th style="width: 40%;">সম্পর্ক</th>
+                            </tr>
+                          </thead>
+                          <tbody id="warishTableBody">
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="footer-banner">জরুরী প্রয়োজনে</div>
+                    <div class="footer-body">
+                      <div class="footer-msg">কোনো জিজ্ঞাসা থাকলে আমাদের সাথে যোগাযোগ করতে পারেন।</div>
+                      <div class="footer-links-grid">
+                        <div>যোগাযোগ<br>জিজ্ঞাসা</div>
+                        <div>গোপনীয়তা<br>সতর্কতা</div>
+                        <div>প্রয়োজনীয়<br>নীতিমালা</div>
+                      </div>
+                    </div>
+                  </div>
+                  <script>
+    // =========================================================
+    // LIVE GOOGLE SHEET DATA
+    // Column A = সনদ নং
+    // Column B = মৃত ব্যক্তির নাম
+    // Column C = তারিখ
+    // Column D = অফিস
+    // Column E = কর্মকর্তা
+    // Column F = ওয়ারিশগণ
+    //
+    // QR Code-এর লিংক:
+    // https://আপনার-ওয়েবসাইট/?cert=সনদনম্বর
+    // স্ক্যান করলে URL থেকে সনদ নম্বর নিয়ে সরাসরি যাচাই হবে।
+    // =========================================================
+    const sheetId = '1vs5Ec3QUYTTox59KprG3DCdV2vWBt7rPt1AizhL7Dzo';
 
-  <script>
-    // Google Sheet CSV Export Link
-    const sheetCsvUrl = 'https://docs.google.com/spreadsheets/d/1ni-dkOAYaCxye6wrQDObZwqys9FzTaa36Dq4py5afJE/export?format=csv';
+    const sheetCsvUrl =
+      'https://docs.google.com/spreadsheets/d/' + sheetId + '/export?format=csv';
+
+    const sheetGvizUrl =
+      'https://docs.google.com/spreadsheets/d/' + sheetId + '/gviz/tq?tqx=out:csv';
 
     function normalizeText(text) {
-      if (!text) return '';
-      return text.toString().replace(/^["'\s]+|["'\s]+$/g, '').trim();
+      if (text === null || text === undefined) return '';
+
+      let value = String(text)
+        .replace(/\uFEFF/g, '')
+        .replace(/\u200B|\u200C|\u200D|\u2060/g, '')
+        .replace(/\u00A0/g, ' ')
+        .normalize('NFC')
+        .trim();
+
+      const banglaDigits = '০১২৩৪৫৬৭৮৯';
+      const arabicDigits = '٠١٢٣٤٥٦٧٨٩';
+      const englishDigits = '0123456789';
+
+      value = value.replace(/[০-৯]/g, d => englishDigits[banglaDigits.indexOf(d)]);
+      value = value.replace(/[٠-٩]/g, d => englishDigits[arabicDigits.indexOf(d)]);
+      value = value.replace(/^["']+|["']+$/g, '').trim();
+
+      return value;
     }
 
+    function normalizeCertificateNumber(text) {
+      return normalizeText(text)
+        .replace(/\s+/g, ' ')
+        .toLowerCase();
+    }
+
+    // নির্ভরযোগ্য CSV parser:
+    // quoted comma, escaped quote ("") এবং multiline quoted field সমর্থন করে।
     function parseCSV(text) {
-      let lines = text.split(/\r\n|\n/);
-      let result = [];
-      for (let line of lines) {
-        if (!line.trim()) continue;
-        let row = [];
-        let insideQuote = false;
-        let entry = '';
-        for (let i = 0; i < line.length; i++) {
-          let char = line[i];
-          if (char === '"') {
-            insideQuote = !insideQuote;
-          } else if (char === ',' && !insideQuote) {
-            row.push(normalizeText(entry));
-            entry = '';
+      const rows = [];
+      let row = [];
+      let field = '';
+      let insideQuote = false;
+
+      for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        const next = text[i + 1];
+
+        if (char === '"') {
+          if (insideQuote && next === '"') {
+            field += '"';
+            i++;
           } else {
-            entry += char;
+            insideQuote = !insideQuote;
           }
+        } else if (char === ',' && !insideQuote) {
+          row.push(normalizeText(field));
+          field = '';
+        } else if ((char === '\n' || char === '\r') && !insideQuote) {
+          if (char === '\r' && next === '\n') i++;
+
+          row.push(normalizeText(field));
+          field = '';
+
+          if (row.some(cell => cell !== '')) rows.push(row);
+          row = [];
+        } else {
+          field += char;
         }
-        row.push(normalizeText(entry));
-        result.push(row);
       }
-      return result;
+
+      if (field !== '' || row.length > 0) {
+        row.push(normalizeText(field));
+        if (row.some(cell => cell !== '')) rows.push(row);
+      }
+
+      return rows;
+    }
+
+    async function fetchSheetRows() {
+      const cacheBuster = '&nocache=' + Date.now();
+
+      // প্রথমে Google Sheet CSV export চেষ্টা করবে।
+      let response = await fetch(sheetCsvUrl + cacheBuster, {
+        method: 'GET',
+        cache: 'no-store'
+      });
+
+      // Export ব্যর্থ হলে একই Sheet-এর GViz CSV endpoint চেষ্টা করবে।
+      if (!response.ok) {
+        response = await fetch(sheetGvizUrl + cacheBuster, {
+          method: 'GET',
+          cache: 'no-store'
+        });
+      }
+
+      if (!response.ok) {
+        throw new Error('Google Sheet থেকে তথ্য আনা যায়নি।');
+      }
+
+      const csvText = await response.text();
+
+      // Permission/login HTML এলে সেটিকে CSV হিসেবে ব্যবহার করা হবে না।
+      const looksLikeHtml =
+        /^\s*<!doctype html/i.test(csvText) ||
+        /^\s*<html/i.test(csvText) ||
+        /accounts\.google\.com/i.test(csvText);
+
+      if (looksLikeHtml) {
+        throw new Error('Google Sheet public access করা নেই।');
+      }
+
+      const rows = parseCSV(csvText);
+
+      if (!rows.length) {
+        throw new Error('Google Sheet-এ কোনো data পাওয়া যায়নি।');
+      }
+
+      return rows;
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function showNotFound() {
+      document.getElementById('resultBox').style.display = 'none';
+      document.getElementById('errorBox').style.display = 'block';
+    }
+
+    function showResult(matchRow) {
+      document.getElementById('outCertNo').innerText = matchRow[0] || '---';
+      document.getElementById('outDeadName').innerText = matchRow[1] || '---';
+      document.getElementById('outDate').innerText = matchRow[2] || '---';
+      document.getElementById('outOffice').innerText = matchRow[3] || '---';
+      document.getElementById('outOfficer').innerText = matchRow[4] || '---';
+
+      const rawWarish = matchRow[5] || '';
+      const warishArray = rawWarish.split(';');
+
+      let tableHtml = '';
+
+      warishArray.forEach(item => {
+        const cleanItem = normalizeText(item);
+        if (!cleanItem) return;
+
+        const lastDashIndex = cleanItem.lastIndexOf('-');
+
+        if (lastDashIndex !== -1) {
+          const name = cleanItem.substring(0, lastDashIndex).trim();
+          const relation = cleanItem.substring(lastDashIndex + 1).trim();
+
+          tableHtml +=
+            '<tr><td>' + escapeHtml(name) +
+            '</td><td>' + escapeHtml(relation) +
+            '</td></tr>';
+        } else {
+          tableHtml +=
+            '<tr><td>' + escapeHtml(cleanItem) +
+            '</td><td>---</td></tr>';
+        }
+      });
+
+      document.getElementById('warishTableBody').innerHTML =
+        tableHtml || '<tr><td colspan="2">কোনো ওয়ারিশ তথ্য পাওয়া যায়নি</td></tr>';
+
+      document.getElementById('errorBox').style.display = 'none';
+      document.getElementById('resultBox').style.display = 'block';
     }
 
     async function searchCertificate() {
-      const inputVal = normalizeText(document.getElementById('certInput').value);
+      const inputElement = document.getElementById('certInput');
       const errorBox = document.getElementById('errorBox');
       const resultBox = document.getElementById('resultBox');
 
-      if (!inputVal) return;
+      const inputVal = normalizeCertificateNumber(inputElement.value);
+
+      errorBox.style.display = 'none';
+
+      if (!inputVal) {
+        resultBox.style.display = 'none';
+        return;
+      }
 
       try {
-        const response = await fetch(sheetCsvUrl + '&nocache=' + new Date().getTime());
-        const csvText = await response.text();
-        
-        const rows = parseCSV(csvText);
-        
-        // Match certificate number without strict type or spacing mismatches
-        const matchRow = rows.find(row => row[0] && normalizeText(row[0]) === inputVal);
+        const rows = await fetchSheetRows();
+
+        // Google Sheet-এর Column A-তে সনদ নম্বর খোঁজা হবে।
+        // Header থাকলেও স্বয়ংক্রিয়ভাবে বাদ পড়ে যাবে, কারণ মিল না হলে ফলাফল হবে না।
+        const matchRow = rows.find(row => {
+          if (!row || !row[0]) return false;
+          return normalizeCertificateNumber(row[0]) === inputVal;
+        });
 
         if (matchRow) {
-          document.getElementById('outCertNo').innerText = matchRow[0] || '---';
-          document.getElementById('outDeadName').innerText = matchRow[1] || '---';
-          document.getElementById('outDate').innerText = matchRow[2] || '---';
-          document.getElementById('outOffice').innerText = matchRow[3] || '---';
-          document.getElementById('outOfficer').innerText = matchRow[4] || '---';
-
-          const rawWarish = matchRow[5] || ''; 
-          const warishArray = rawWarish.split(';');
-
-          let tableHtml = '';
-          warishArray.forEach(item => {
-            const cleanItem = item.trim();
-            if (cleanItem) {
-              const lastDashIndex = cleanItem.lastIndexOf('-');
-              if (lastDashIndex !== -1) {
-                const name = cleanItem.substring(0, lastDashIndex).trim();
-                const relation = cleanItem.substring(lastDashIndex + 1).trim();
-                tableHtml += `<tr><td>${name}</td><td>${relation}</td></tr>`;
-              } else {
-                tableHtml += `<tr><td>${cleanItem}</td><td>---</td></tr>`;
-              }
-            }
-          });
-
-          document.getElementById('warishTableBody').innerHTML = tableHtml;
-          errorBox.style.display = 'none';
-          resultBox.style.display = 'block';
+          showResult(matchRow);
         } else {
-          resultBox.style.display = 'none';
-          errorBox.style.display = 'block';
+          showNotFound();
         }
       } catch (error) {
         console.error('Data Fetching Error:', error);
-        resultBox.style.display = 'none';
-        errorBox.style.display = 'block';
+        showNotFound();
       }
     }
 
-    window.onload = function() {
-      const urlParams = new URLSearchParams(window.location.search);
-      const certParam = urlParams.get('cert');
-      
-      if (certParam) {
-        document.getElementById('certInput').value = decodeURIComponent(certParam).trim();
+    // Enter চাপলেও যাচাই হবে।
+    document.getElementById('certInput').addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
         searchCertificate();
       }
-    };
+    });
+
+    // =========================================================
+    // QR CODE / DIRECT VERIFICATION
+    // ?cert=সনদ নম্বর থাকলে পেজ খোলার সঙ্গে সঙ্গে যাচাই হবে।
+    // =========================================================
+    window.addEventListener('load', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const certParam = urlParams.get('cert');
+
+      if (certParam) {
+        const decodedCert = normalizeText(certParam);
+        document.getElementById('certInput').value = decodedCert;
+
+        // QR স্ক্যান → ওয়েবসাইট → Live Google Sheet → সরাসরি ফলাফল।
+        searchCertificate();
+      }
+    });
   </script>
-</body>
-</html>
+                </body>
+              </html>
